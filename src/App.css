@@ -1,38 +1,256 @@
-.App {
+
+*{
+    padding: 0%;
+    margin: 0%;
+    
+}
+body{
+    margin: 0%;
+    border: 0px;
+    padding: 0%;
+   background-color:#222831;
+ 
+}
+h1 {
+    
+    margin: 0; /* Set margin to 0 */
+    border: 0;
+    padding: 20px;
+    text-align: center;
+    padding-left: 20px;
+    color: #F2F1EB;
+    padding-bottom: 5px;
+}
+
+
+
+h4{
+    color: antiquewhite;
+    font-size: 30px;
+    color: #FD7014;
+}
+/* side bar style */
+
+/* Sidebar.css */
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color:#393E46
+    
+;
+
+color: #F2F1EB;
+    position: fixed;
+    top: 0;
+    left: 0; /* Adjust left position for the sidebar to always be visible */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+ 
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    border-bottom: 0.5px solid rgba(240, 240, 240, 0.2);
+    ;}
+  
+  .sidebar li:hover {
+    background-color: #bdbdbd;
+    color: #393E46;
+  }
+  
+
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .sidebar {
+      left: -200px; /* Move the sidebar off-screen initially on mobile */
+    }
+  }
+
+ 
+
+  .inp{
+   /* Normal Styles */
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  /* Responsive Styles using Media Queries */
+  @media (max-width: 600px) {
+    input {
+      font-size: 14px;
+      border-radius: 8px;
+    }
+  }
+  /* form stlyling*/
+
+  #inputbar{
+    width: 120%;
+    max-width: 900px;
+    background:#393E46;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+
+  }
+
+  #inputbar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    color:#ffffff;
+    font-weight: bold;
+  }
+  
+  ::placeholder{
+    color: azure;
+  }
+  #inputbar button{
+    
+    border: 0;
+    border-radius: 0%;
+    width: 40px;
+    height: 30px;
+    border-radius: 15px;
+    background: #DED0B6;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .output{
+    color: aliceblue;
+    background-color: #555;
+      text-align: center;
+   
+     width: 50%;
+     position: relative;
+     left: 270px;
+     top: 300px;
+     border-radius: 10px;
+
+  }
+  .chat-input-container{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+
+  }
+
+
+
+ /* about page */
+
+
+#about-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  background-color: #222831;
+ 
+}
+
+
+#about-container p ,li{
+   font-size: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 100;
+   color: #F2F1EB;
+
+}
+
+#about-container h2{
+  color: #EEEEEE;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#about-container a{
+       
+      text-decoration: none;
+      background-color: #00ADB5;
+      color:#222831;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight:bold;
+      height: 25px;
+      width: 100px;
+      padding: 8px;
+      
+      border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+#button h5{
+  margin-top: 10px;
+     text-align: center;
+
+}
+#button h5 :hover{
+      background-color: #555;
+}
+
+#about-container h2{
+     color: #00ADB5;
+     margin-bottom: 5px;
+
+}
+ h2 :hover{
+  color: #bdbdbd;
+}
+
+#check{
+   position: fixed;
+   top: 25px;
+   left: 10px;
+   display: none;
+}
+
+
+#wrapper-voice{
+   background-color: #f5d2f2;
+
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
