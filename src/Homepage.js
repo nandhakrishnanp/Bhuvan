@@ -39,6 +39,7 @@ const Homepage = ({ messages  ,transcript , isLoading , listening}) => {
       <div id='container-msg' ref={containerRef} className='conversation-container'>
         {messages.map((data, index) => (
           <div key={index} className={data.msg.inputValue ? 'right-msg' : 'left-msg'}>
+            
             <p >
               <TextWithClickableLinks text={data.msg.inputValue || data.msg.prompt} />
              
@@ -46,7 +47,7 @@ const Homepage = ({ messages  ,transcript , isLoading , listening}) => {
        
           </div>
         ))}
-           {isLoading ? <p>typing....</p>: null}
+           {isLoading ? <p id="loading">typing....</p>: null}
       </div>
           { listening ?  <Popup transcript={transcript}/>: null}
     </div>

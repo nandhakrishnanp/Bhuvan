@@ -12,7 +12,7 @@
   }
   
   .conversation-container {
-    max-height: 400px;
+    max-height: 390px;
     overflow-y: auto;
     padding: 10px;
   
@@ -20,9 +20,11 @@
   }
   
   .right-msg {
+    margin: 0%;
+    margin-left: auto;
     font-size: 20px;
-    font-weight: bold;
-    text-align: right;
+    width: fit-content;
+   text-align: right;
     color:#EEEEEE;
     background-color:#393E46;
     padding: 8px;
@@ -33,7 +35,7 @@
   
   .left-msg {
     font-size: 20px;
-    font-weight: bold;
+  
     text-align: left;
     color:#EEEEEE;
     background-color:#393E46;
@@ -70,6 +72,7 @@
   }
   #how{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
      position: relative;

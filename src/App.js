@@ -28,11 +28,13 @@ function App()  {
 
      
       const userInput = inputValue ; 
+      setMessages( msg => [...msg,{  msg : {inputValue}}])
+      setInputValue('');
       const response = await axios.post('http://localhost:3001', { input: userInput });
       setApiResponse(response.data);
       console.log(apiResponse)
-      setMessages( msg => [...msg,{  msg : {inputValue}}])
-      setInputValue('');
+      
+      
       SetisLoading(true)
       
       
